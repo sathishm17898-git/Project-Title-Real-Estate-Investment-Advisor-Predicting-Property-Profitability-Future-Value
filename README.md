@@ -1,5 +1,12 @@
 # Project-Title-Real-Estate-Investment-Advisor-Predicting-Property-Profitability-Future-Value
 This project builds a machine learning pipeline to predict future property prices and classify investment type (Good Investment vs. Not Good Investment). 
+**Files**
+raw data - Raw dataset used for preprocessing and exploratory analysis
+Data - Cleaned dataset with y_price (future predicted variable used for price prediction) and growth rate
+Used data - Dataset used for model training. (It has y_price (for regression) and y_class (for classification))
+Real Estate Investment Advisor - Documentation explains all steps taken in this project.
+Project_2.ipynb - Python script file
+streamlit_app - Dashboard script file
 **Preprocessing**
     •	Converted Year_Built → datetime, ID → string.
     •	Removed redundant variables: ID, Amenities, Year_Built, Price_per_SqFt (correlated –0.61 with Size_in_SqFt), Price_p_s, and Growth Rate.
